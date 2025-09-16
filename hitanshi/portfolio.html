@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    </head>
+<body>
+    <header class="header" >
+        <a href="#home" class="logo">
+            Hitanshi <span>Parekh</span>
+        </a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home"> Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="gradient-btn"> <a href="#contact">Contact Me</a></button>
+    </header>
+ 
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hello , It's <span>Hitanshi</span></h1>
+            <h3> I'm a <span> Web Developer</span></h3>
+            <p>I'm a student from SY UG from Bsc-IT feild from KC College,Mumbai</p>
+            <div class="social-icons">
+                <a href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjBJREFUSEu11UnIjlEUB/DfJ7IhCyRZosxFslCKKGFjKEOKEjKlJGOJZAglkiHsCCXDhh0LC5SIjEWysDAkC1KIPOfrvnW/53uHx+I7m/e99/7P/Z9z7jn/p00XW1sX368VQQ/MxgyMxlDafd7hCW4W+1fwu1GgzQim4SSGtMjyLVbiVj1cI4It2J+irVLFv9iKQ2VwPYLNOFDl1jqYDTiS75cJpqRUYz/quwyrsQPd8CbVezgi6n04gWOYl/Ym4W6NJCfoiecYnA53Y2f6H+/wEd/SuhcG4nVab8fe9P8FxhRB/Yl1TrAAl7L0ItVIuYodxKYMOCtVoAPB+SKixRloIu5VuT1F/DgL+DjWlTOI8ozI0hxZ8fIa7CHGpcWDIoMJZYJP6J8A14tBmvOfBBewKPl8Qb8ywYdisAYkwG1M/U+CG5iZfL6jd5ngEcYmQHRL32YSUCIPSfmMPmn/FaKVOzzyGSzPHFfgbMUsAns6w57DkjJB1PwqviJSjD6P8Q89+tGAKOZhbRq4GMSazcflMkHMRHTSoKI9p2MVluJX6umF+JluiJJcS7juJfKXGJWmupNcz03y+x7j0+BNTlmsKV10EUFatqhEdGG71RO7o1if9GdPkzfYlUlJDXa4kJONuU8juQ5xCy26U4jYUzzDqRJZnAeuZqHCleS65hCqGHoU0xnyHQ+eWyjpNtxPmhW/nazVJzPO45MZMh2Z5DYs9Xo8dkNrRdDMt9JZlxP8A6W4YxlKv0WFAAAAAElFTkSuQmCC"/>
+                </a>
+                <a href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASxJREFUSEvl1TsvBFEYh/HfCp2Igso3oNXoKFQKIa6hk/AtJD6GS4m4h0InLo1G7xPoRKUl7Elem81erZndxlQzOe88z5z/Oe+cgjZfhTbzdVxwh/GMs7rHxA+jcgZfGeFV3EaC66ie+oO0xK0nOMBqgA+x3KKkqWAX6wHdw1regnfsowsr6M1b8IrngA5jsLgzHuJ5CP3YxgdGMFfxAU0jOsZSvHSERUo9M4MnvJRBN4vjW2XPTQUnAU3vJNlCxFVvG3fjDX0hySTowRVGQ5waK12PGMtDkLr0NkA72Ij7S0znIUhrcBGgWlGmoaYRncb0U3GCzCPl/IlZnIfgLMbK6/6JoFGjDURzpShq1f0qohb/DFXldRc5jwPnBpM/yo4fmVmjqZ9V7uQAfgNR+VIZag7oTQAAAABJRU5ErkJggg=="/>
+                </a>
+                <a href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAeNJREFUSEvF1T+ozmEUB/DPdUlSN5KUwcLtJv/jjpiMZHCVYjESxSCDlAwGJYrproRBYpJFuotYkKRkUCYWhZL/z9Hze3s8fr/cN73dM73vOec533O+589vyIBlaMDxzRjAchzFZqymM5GfeIYpnMfLmpG2Cg5k5zl90vcVBzFZvqsBNuIhZvUZvHH/hk140ihqgJvY2Ufwt1iDCVzM724k2nZ1AbzGshaANziD51iEMRxH+AdAZP0ov3uFFV0AHzG/AribM/qAxdn2DqtwB59SzxZgSbaF30gbQPD+vQoegUZzsL3Yipic+ynLyxjOE1Q+iz70BqTsQSi/VABncSxlfgkxXaUE54dwG9sLQyQ5u62CUMaolbIft3LGsQ+lPMU6nEx7cqow/MiV/VaVFcTvMJYSc30tUXMPayvb4wS+ASdSwNOVrRe3HtPgt5TgeR8u4HBli809kivcUdg6exA+NUBUtB7zsAdbcqBo8tU0unNbmvw5+/9FUSjaxjRmPZYvKCkl7lTQt7TSv08VL2x0NUVxrHpLUjUuNrRctG1V4ObvC6zsArieguzueDhd9RXEzrRSNI4H/3ns4mDGCLcChHKg57oBLj84ccy6pPzgnEsjHYfuD5mxT+Z0G/pPv4FX8AszSlgZRYBdrAAAAABJRU5ErkJggg=="/>
+                </a>
+            </div>
+            <div class="btn-group">
+              <a href="#" class="btn"> Hire</a>
+              <a href="#contact" class="btn">Contact</a>  
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="hitanshi1.jpg">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="hitanshi1.jpg" alt="" srcset="">
+        </div>
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>I'm a student from SY UG from Bsc-IT feild from KC College,Mumbai</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+        <div class="service-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXZJREFUSEu11b9Ll1EUx/GXiUSL2CI4tImO4qD+Bf0JkYQJqQi6iL8IIacswhpagqCgIMJ/wEknwUkUBydXCckpwsUa1O+RR1B7rtwnvt87PTz33PM+59zPObdJg1dTg/27DTCA9+jF3UQgf7CDKWyX2aQAD7CPe5kZHqMLP2/apwBzeJvp/NJsusj42rEU4DUWKgKWsJibwRg+VQQ8w9dcQNR+F92ZkD304yQXEHbNGMYrdFw5uFH711II4C9WESU9raKisI0SjfKPlEO+IcsnhcMDfMdHxHfWJT/EWqI83/C0ZG8EX3IBb/A8AfiF+yV7kcFELmAZ840EDNYUtNLIEkUDfkZo+2Yz1uWSI/hORPsPofVKNgFsL/ZDvkfYTPVLalS04TAx7CqN+JTxJD4koqoL4B1mSwBnuJM5Pi7MUtG8qI2KlyWOfiDeiuyVAvRhq8RLjI/xbO+3ZBA+HmMGPcWTuY5HNWX9rhegip+kbSVF/A/xHJrLORkfLe10AAAAAElFTkSuQmCC"/>
+                    <h4>UI / UX Design </h4>
+                    <p> para</p>
+                </div>
+            </div>
+            <div class="service-container">
+                <div class="service-box">
+                    <div class="service-info">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAd9JREFUSEvF1U+IjlEUx/HPUBb+29tpIv8XhK00e4vZ2SghG7HBQiSJDcWCrSbLqVkpC+tBESKRhbIX+Zf8vWe67/R45z7Pe181OXU3z3Pu+d57zu+cO2KebWSe4+sCbMRl7GHGr9/3N37hLo7iRemwbYAjuIYFjU0lQO/3DxzAzX5ICbAD9xAnPJlBX1tSuRjHcB4BiVu/bPqWABPYh0sZUFOm6ziMKzg+CPAWqzGaQK9romMnpvEQ2wYBfubcL8xFrGGswPu8VnUBIqef8QnLaiI3fGLPkry+9L7316D1qhWwp9iEXVkkM1uagDXJYRJbkoLOpDSdqwjadLmIE3iMvXjTBAQomibsObYn5zZptnEjpVHkEMds7OYNQvdhr7D1HwBL8agLsDYFnsI6nM7NM0yWLuAU7qcsjCPkPme+jKUi3clOUfBh7Bk25BpGwecUOT6Eht+l9v+AlcNET6f/hkX4q39Ko6Kn58hp9ESNhe/HvJY3N5QAoaL1udBPaqJn1T1ApCZkPmslwA0cKg2uDlhv2F3Nb0MnIE4QzRJ9EeM6NkV+SxbpiHF9Ft9zJw8c1xHoIOJUtQ9OBN+feuBW/ym6nszNOU27WxQXjRmT93Z+A4qj/b8++pUC6nb7A1X0WhkWNN36AAAAAElFTkSuQmCC"/>
+                        <h4>Frontend Developer</h4>
+                        <p> para</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="project-box">
+            <div class="project-card">
+                <img src="Screenshot (20).png">
+                <h3>Project 1</h3>
+                <p>This is a smiple calculator made using html css javascript </p>
+                <div class="btn">Review Project</div>
+            </div>
+            <div class="project-card">
+                <img src="Screenshot (23).png">
+                <h3>Project 2</h3>
+                <p>This is a do to list made using html css javascript in which you can add tick and delete the item also it will store the data every time you reload the website </p>
+                <div class="btn">Review Project</div>
+            </div>
+            <div class="project-card">
+                <img src="Screenshot (3).png">
+                <h3>Project 3</h3>
+                <p>The text to audio converter also supports pdf file for converstion supports multiple language using api's this project is made by team of 2 using html css javascript language </p>
+                <div class="btn">Review Project</div>
+            </div>
+        </div>
+    </section>
+     <section class="contact" id="contact">
+        <h2 class="heading">Contact<span>Me</span></h2>
+        <form action="#">
+            <div class="input-group">
+                <div class="input-box">
+                  <input type="text" placeholder="Full Name" >
+                  <input type="text" placeholder="Email"> 
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone number">
+                    <input type="text" placeholder="Subject">
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
+                <input type="submit" value="send Message" class="btn">
+            </div>
+        </form>
+     </section>
+     <footer class="footer">
+        <div class="social-icons">
+            <a href="#">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAjBJREFUSEu11UnIjlEUB/DfJ7IhCyRZosxFslCKKGFjKEOKEjKlJGOJZAglkiHsCCXDhh0LC5SIjEWysDAkC1KIPOfrvnW/53uHx+I7m/e99/7P/Z9z7jn/p00XW1sX368VQQ/MxgyMxlDafd7hCW4W+1fwu1GgzQim4SSGtMjyLVbiVj1cI4It2J+irVLFv9iKQ2VwPYLNOFDl1jqYDTiS75cJpqRUYz/quwyrsQPd8CbVezgi6n04gWOYl/Ym4W6NJCfoiecYnA53Y2f6H+/wEd/SuhcG4nVab8fe9P8FxhRB/Yl1TrAAl7L0ItVIuYodxKYMOCtVoAPB+SKixRloIu5VuT1F/DgL+DjWlTOI8ozI0hxZ8fIa7CHGpcWDIoMJZYJP6J8A14tBmvOfBBewKPl8Qb8ywYdisAYkwG1M/U+CG5iZfL6jd5ngEcYmQHRL32YSUCIPSfmMPmn/FaKVOzzyGSzPHFfgbMUsAns6w57DkjJB1PwqviJSjD6P8Q89+tGAKOZhbRq4GMSazcflMkHMRHTSoKI9p2MVluJX6umF+JluiJJcS7juJfKXGJWmupNcz03y+x7j0+BNTlmsKV10EUFatqhEdGG71RO7o1if9GdPkzfYlUlJDXa4kJONuU8juQ5xCy26U4jYUzzDqRJZnAeuZqHCleS65hCqGHoU0xnyHQ+eWyjpNtxPmhW/nazVJzPO45MZMh2Z5DYs9Xo8dkNrRdDMt9JZlxP8A6W4YxlKv0WFAAAAAElFTkSuQmCC"/>
+            </a>
+            <a href="#">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASxJREFUSEvl1TsvBFEYh/HfCp2Igso3oNXoKFQKIa6hk/AtJD6GS4m4h0InLo1G7xPoRKUl7Elem81erZndxlQzOe88z5z/Oe+cgjZfhTbzdVxwh/GMs7rHxA+jcgZfGeFV3EaC66ie+oO0xK0nOMBqgA+x3KKkqWAX6wHdw1regnfsowsr6M1b8IrngA5jsLgzHuJ5CP3YxgdGMFfxAU0jOsZSvHSERUo9M4MnvJRBN4vjW2XPTQUnAU3vJNlCxFVvG3fjDX0hySTowRVGQ5waK12PGMtDkLr0NkA72Ij7S0znIUhrcBGgWlGmoaYRncb0U3GCzCPl/IlZnIfgLMbK6/6JoFGjDURzpShq1f0qohb/DFXldRc5jwPnBpM/yo4fmVmjqZ9V7uQAfgNR+VIZag7oTQAAAABJRU5ErkJggg=="/>
+            </a>
+            <a href="#">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAeNJREFUSEvF1T+ozmEUB/DPdUlSN5KUwcLtJv/jjpiMZHCVYjESxSCDlAwGJYrproRBYpJFuotYkKRkUCYWhZL/z9Hze3s8fr/cN73dM73vOec533O+589vyIBlaMDxzRjAchzFZqymM5GfeIYpnMfLmpG2Cg5k5zl90vcVBzFZvqsBNuIhZvUZvHH/hk140ihqgJvY2Ufwt1iDCVzM724k2nZ1AbzGshaANziD51iEMRxH+AdAZP0ov3uFFV0AHzG/AribM/qAxdn2DqtwB59SzxZgSbaF30gbQPD+vQoegUZzsL3Yipic+ynLyxjOE1Q+iz70BqTsQSi/VABncSxlfgkxXaUE54dwG9sLQyQ5u62CUMaolbIft3LGsQ+lPMU6nEx7cqow/MiV/VaVFcTvMJYSc30tUXMPayvb4wS+ASdSwNOVrRe3HtPgt5TgeR8u4HBli809kivcUdg6exA+NUBUtB7zsAdbcqBo8tU0unNbmvw5+/9FUSjaxjRmPZYvKCkl7lTQt7TSv08VL2x0NUVxrHpLUjUuNrRctG1V4ObvC6zsArieguzueDhd9RXEzrRSNI4H/3ns4mDGCLcChHKg57oBLj84ccy6pPzgnEsjHYfuD5mxT+Z0G/pPv4FX8AszSlgZRYBdrAAAAABJRU5ErkJggg=="/>
+            </a>
+        </div> 
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="#about">About me</a>
+            </li>
+            <li>
+               <a href="#projects">Projects</a> 
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul> 
+        <p class="copyright">
+            &copy; Hitanshi Parekh | All Rights Reserved
+        </p>
+     </footer>
+    <script src="portfolio.js"></script>
+</body>
+</html>
